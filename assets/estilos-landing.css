@@ -1,4 +1,4 @@
-
+/* Variables globales */
 :root {
   --color-azul-oscuro: #03045E;
   --color-azul-hover: #0056b3;
@@ -74,7 +74,6 @@ body {
   outline: none;
 }
 
-/* Hero */
 .hero {
   padding: 2rem 1rem 3rem;
   text-align: center;
@@ -227,18 +226,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.product-card__button {
-  background-color: var(--color-azul-oscuro);
-  color: var(--color-blanco);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  transition: background-color 0.3s ease;
-}
-
 .product-card__button:hover,
 .product-card__button:focus {
   background-color: var(--color-azul-hover);
@@ -267,6 +254,56 @@ body {
   padding-top: 1rem;
 }
 
+.external-link {
+  background-color: var(--color-azul-oscuro);
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+.external-link__anchor {
+  color: var(--color-blanco);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.external-link__anchor:hover,
+.external-link__anchor:focus {
+  color: var(--color-azul-hover);
+  outline: none;
+}
+
+.testimonial-card__photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid var(--color-azul-oscuro);
+  justify-content: space-around;
+}
+
+.testimonial-card__content {
+  font-style: normal;
+}
+
+.testimonial-card__text {
+  font-size: 1rem;
+  color: var(--color-texto-secundario);
+  margin-bottom: 1rem;
+  font-style: var(--font-family);
+}
+
+.testimonial-card__author {
+  font-weight: 600;
+  color: var(--color-azul-oscuro);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+
+/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .products__cards {
     flex-direction: column;
@@ -288,6 +325,27 @@ body {
   }
 }
 
+/* Pantallas pequeñas */
+@media (max-width: 900px) {
+  .testimonials__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* Móviles medianos */
+@media (max-width: 600px) {
+  .external-link {
+    text-align: center;
+  }
+}
+
+/* Móviles pequeños */
 @media (max-width: 480px) {
   .hero__search {
     flex-direction: column;
