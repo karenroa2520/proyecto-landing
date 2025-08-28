@@ -345,7 +345,6 @@ body {
   }
 }
 
-/* Móviles pequeños */
 @media (max-width: 480px) {
   .hero__search {
     flex-direction: column;
