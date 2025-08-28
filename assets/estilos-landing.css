@@ -1,4 +1,4 @@
-/* Variables globales */
+
 :root {
   --color-azul-oscuro: #03045E;
   --color-azul-hover: #0056b3;
@@ -11,7 +11,6 @@
   --border-radius: 5px;
 }
 
-/* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +24,6 @@ body {
   line-height: 1.5;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,15 +40,15 @@ body {
 }
 
 .navbar__logo-image {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .navbar__logo-text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -110,7 +108,7 @@ body {
 }
 
 .hero__search-input {
-  padding: 0.75rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: var(--border-radius);
@@ -138,7 +136,6 @@ body {
   outline: none;
 }
 
-/* Imagen grande debajo del texto */
 .hero__image-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -153,7 +150,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Products Section */
 .products {
   background-color: var(--color-fondo-cards);
   padding: 3rem 1rem 4rem;
@@ -229,4 +225,79 @@ body {
   font-size: 1rem;
   font-weight: 700;
   transition: background-color 0.3s ease;
+}
+
+.product-card__button {
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__button:hover,
+.product-card__button:focus {
+  background-color: var(--color-azul-hover);
+  outline: none;
+}
+
+.footer {
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer__section {
+  margin-bottom: 1.5rem;
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .products__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar__item {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__search {
+    flex-direction: column;
+  }
+
+  .hero__search-input {
+    width: 100%;
+  }
+
+  .btn--search {
+    width: 100%;
+  }
 }
