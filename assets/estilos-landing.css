@@ -301,9 +301,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Responsive */
 
-/* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .products__cards {
     flex-direction: column;
@@ -325,7 +323,6 @@ body {
   }
 }
 
-/* Pantallas pequeñas */
 @media (max-width: 900px) {
   .testimonials__list {
     flex-direction: column;
@@ -338,7 +335,6 @@ body {
   }
 }
 
-/* Móviles medianos */
 @media (max-width: 600px) {
   .external-link {
     text-align: center;
