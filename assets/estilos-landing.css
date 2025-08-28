@@ -1,0 +1,26 @@
+/* Variables globales */
+:root {
+  --color-azul-oscuro: #03045E;
+  --color-azul-hover: #0056b3;
+  --color-blanco: #fff;
+  --color-fondo-cards: #f0f2f5;
+  --color-texto-principal: #333;
+  --color-texto-secundario: #666;
+  --font-family: 'Poppins', sans-serif;
+  --espaciado: 1rem;
+  --border-radius: 5px;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-blanco);
+  color: var(--color-texto-principal);
+  line-height: 1.5;
+}
